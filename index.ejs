@@ -1,0 +1,265 @@
+<%- include('partials/head') %> <%- include('partials/navbar') %>
+
+<!-- Main Section -->
+<main class="main">
+  <!-- Hero Section -->
+  <header class="header">
+    <div class="container">
+      <h1 class="heading-1 mb-12">
+        <span class="text--xl heading-1__main">Discover</span> Your Next Camping
+        <br />
+        Adventure
+      </h1>
+      <p class="header__text mb-24">
+        <!-- Explore Campgrounds, Share Experiences, Connect with Nature. <br /> -->
+        This is a dummy website intended to showcase my web developement skill.
+        <br />
+        All camps posted here are fake.
+      </p>
+      <a href="#" class="btn btn--secondary btn--md">Find Your Campsite</a>
+    </div>
+  </header>
+
+  <!-- Search Section -->
+  <section class="section-search">
+    <form action="#" method="get" class="container form search">
+      <div class="form__group search__input">
+        <input
+          type="text"
+          name="search"
+          value=""
+          id="search"
+          class="form__input"
+          placeholder="Search Camps by Name or Location"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn--primary">Search</button>
+    </form>
+  </section>
+
+  <!-- Section Featured Camps -->
+  <section class="section-camps">
+    <div class="container">
+      <h2 class="heading-2 text--center mb-12">
+        <span class="heading-2--sub">Featured</span>Our Camps
+      </h2>
+      <!-- Camp Cards -->
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="cards-2 camp-card">
+          <div class="camp-card__img-box">
+            <img src="img/camp-1.jpg" alt="camp 1" class="camp-card__img" />
+          </div>
+          <div class="camp-card__header mb-12">
+            <h3 class="heading-3 camp-card__title">Forest Haven</h3>
+            <p class="camp-card__specification">30 persons | 10 acres</p>
+          </div>
+          <p class="camp-card__details mb-12">
+            Nestled in the heart of the forest, Forest Haven offers a serene
+            camping experience with access to hiking trails and wildlife
+            viewing.
+          </p>
+          <div class="camp-card__footer">
+            <p class="camp-card__price">
+              <span>Price:</span> $50 <span>/ Night</span>
+            </p>
+            <a href="camps-show.ejs" class="btn btn--link camp-card__link"
+              >View Details <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="cards-2 camp-card">
+          <div class="camp-card__img-box">
+            <img src="img/camp-2.jpg" alt="camp 2" class="camp-card__img" />
+          </div>
+          <div class="camp-card__header mb-12">
+            <h3 class="heading-3 camp-card__title">Lakeside Retreat</h3>
+            <p class="camp-card__specification">50 persons | 15 acres</p>
+          </div>
+          <p class="camp-card__details mb-12">
+            Enjoy stunning lake views and water activities at Lakeside Retreat,
+            perfect for family vacations and water sports enthusiasts.
+          </p>
+          <div class="camp-card__footer">
+            <p class="camp-card__price">
+              <span>Price:</span> $75 <span>/ Night</span>
+            </p>
+            <a href="camps-show.ejs" class="btn btn--link camp-card__link"
+              >View Details <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="cards-2 camp-card">
+          <div class="camp-card__img-box">
+            <img src="img/camp-3.jpg" alt="camp 3" class="camp-card__img" />
+          </div>
+          <div class="camp-card__header mb-12">
+            <h3 class="heading-3 camp-card__title">Mountain Escape</h3>
+            <p class="camp-card__specification">40 persons | 20 acres</p>
+          </div>
+          <p class="camp-card__details mb-12">
+            Experience the beauty of the mountains at Mountain Escape, offering
+            cozy cabins and breathtaking hiking trails.
+          </p>
+          <div class="camp-card__footer">
+            <p class="camp-card__price">
+              <span>Price:</span> $60 <span>/ Night</span>
+            </p>
+            <a href="camps-show.ejs" class="btn btn--link camp-card__link"
+              >View Details <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="cards-2 camp-card">
+          <div class="camp-card__img-box">
+            <img src="img/camp-4.jpg" alt="camp 4" class="camp-card__img" />
+          </div>
+          <div class="camp-card__header mb-12">
+            <h3 class="heading-3 camp-card__title">Desert Oasis</h3>
+            <p class="camp-card__specification">25 persons | 8 acres</p>
+          </div>
+          <p class="camp-card__details mb-12">
+            Desert Oasis provides a unique camping experience in the desert,
+            with access to sand dunes and beautiful sunsets.
+          </p>
+          <div class="camp-card__footer">
+            <p class="camp-card__price">
+              <span>Price:</span> $55 <span>/ Night</span>
+            </p>
+            <a href="camps-show.ejs" class="btn btn--link camp-card__link"
+              >View Details <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="text--center">
+        <a href="#" class="btn btn--primary btn--md">View More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section About -->
+  <section class="section-about">
+    <div class="container row-flex">
+      <div class="col-1-3 about__img-box">
+        <img src="img/about.jpg" alt="camper on a cliff" class="about__img" />
+      </div>
+      <div class="col-2-3 about__content">
+        <h2 class="heading-2 about__title mb-12">
+          <span class="heading-2--sub">What we are</span>About Us
+        </h2>
+        <p class="about__details">
+          CampLog is a community-driven platform built by campers, for campers.
+          Our mission is to provide a reliable and comprehensive resource for
+          discovering and sharing information about campgrounds. Unlike many
+          other review sites, which may feature paid promotions, CampLog is
+          dedicated to ensuring that all reviews are genuine and verified.
+        </p>
+        <p class="about__details">
+          At CampLog, users can post details about the campgrounds they've
+          visited, including their experiences, amenities, and tips. Each review
+          is verified to ensure the reviewer actually stayed at the campground,
+          making all our content organic and trustworthy. This way, you can make
+          informed decisions and avoid the hassle of arriving at a new area
+          without reliable information.
+        </p>
+        <p class="about__details">
+          At CampLog, users can post details about the campgrounds they've
+          visited, including their experiences, amenities, and tips. Each review
+          is verified to ensure the reviewer actually stayed at the campground,
+          making all our content organic and trustworthy. This way, you can make
+          informed decisions and avoid the hassle of arriving at a new area
+          without reliable information.
+        </p>
+        <a href="contact.ejs" class="btn btn--primary mt-16">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Features -->
+  <section class="section-features">
+    <h2 class="heading-2 text--center mb-12">
+      <span class="heading-2--sub">What We Offer</span>Features
+    </h2>
+    <div class="container cards">
+      <!-- Feature 1 -->
+      <div class="cards-3 feature">
+        <h5 class="heading-5 feature__title">
+          <i class="fas fa-binoculars feature__icon"></i> Explore
+        </h5>
+        <p class="feature__details">
+          Explore a wide range of campgrounds with detailed descriptions,
+          amenities, and reviews to find your perfect camping destination.
+        </p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="cards-3 feature">
+        <h5 class="heading-5 feature__title">
+          <i class="fas fa-share-alt feature__icon"></i> Share
+        </h5>
+        <p class="feature__details">
+          Share your camping adventures, tips, and insights with the Camp-Log
+          community by writing reviews and uploading photos of your experiences.
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="cards-3 feature">
+        <h5 class="heading-5 feature__title">
+          <i class="fas fa-tree feature__icon"></i> Love Nature
+        </h5>
+        <p class="feature__details">
+          Immerse yourself in nature and enjoy outdoor activities such as
+          hiking, fishing, and stargazing at beautiful campsites across the
+          country.
+        </p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="cards-3 feature">
+        <h5 class="heading-5 feature__title">
+          <i class="fas fa-map feature__icon"></i> Maps
+        </h5>
+        <p class="feature__details">
+          Plan your camping trip with ease using interactive maps, campground
+          ratings, and user reviews to make informed decisions about where to
+          stay.
+        </p>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="cards-3 feature">
+        <h5 class="heading-5 feature__title">
+          <i class="fas fa-users feature__icon"></i> Explore
+        </h5>
+        <p class="feature__details">
+          Join a vibrant community of outdoor enthusiasts, share
+          recommendations, and connect with like-minded campers to enhance your
+          camping experience.
+        </p>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="cards-3 feature">
+        <h5 class="heading-5 feature__title">
+          <i class="fas fa-thumbs-up feature__icon"></i> Personalized Experience
+        </h5>
+        <p class="feature__details">
+          Receive personalized campground recommendations based on your
+          preferences, past reviews, and camping interests to discover new and
+          exciting destinations.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %> <%- include('partials/end') %>

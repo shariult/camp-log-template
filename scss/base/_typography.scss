@@ -1,0 +1,68 @@
+// ======= Imports ======= //
+
+@use "../abstracts/" as *;
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("./vendor/fonts/WorkSans-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 1 999;
+}
+
+// ======= Codes ======= //
+
+$font-heading: "Source Sans", sans-serif;
+$font-paragraph: "Source Sans", sans-serif;
+
+// Setting Fonts
+body {
+  color: $grey-900;
+  font-family: $font-paragraph;
+  font-size: $size-18;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-heading;
+}
+
+.heading-1 {
+  font-size: $size-44;
+  line-height: 1.1;
+  font-weight: 500;
+  text-transform: capitalize;
+  &__main {
+    display: block;
+    text-transform: uppercase;
+  }
+  @include responsive(800) {
+    text-align: center;
+    font-size: $size-36;
+  }
+}
+
+.heading-2 {
+  font-size: $size-36;
+  font-weight: 500;
+  &--sub {
+    display: block;
+    font-size: $size-16;
+    color: $grey-500;
+    letter-spacing: $space-4;
+    text-transform: uppercase;
+  }
+}
+
+.heading-3 {
+  font-size: $size-30;
+}
+
+.heading-5 {
+  font-size: $size-20;
+}

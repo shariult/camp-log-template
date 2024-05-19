@@ -1,0 +1,46 @@
+// ======= Imports ======= //
+
+@use "../abstracts/" as *;
+
+// ======= Codes ======= //
+
+.section-search {
+  background-color: $grey-300;
+  padding: $space-32;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  &__input {
+    max-width: 50%;
+  }
+}
+
+.section-camps {
+  padding: $space-80 0;
+}
+
+.section-about {
+  padding: $space-80 0;
+  background-color: $grey-50;
+}
+
+.section-features {
+  padding: $space-80 0;
+}
+
+.section-error {
+  padding: $space-80 0;
+  text-align: center;
+  .error {
+    &__title {
+      font-size: $size-98;
+      color: $grey-400;
+      line-height: 1.2;
+    }
+    &__message {
+      margin-bottom: $space-32;
+    }
+  }
+}

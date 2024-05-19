@@ -1,0 +1,56 @@
+// ======= Imports ======= //
+
+@use "../abstracts/" as *;
+
+// ======= Codes ======= //
+
+.main {
+  padding-top: $space-64;
+}
+
+.section-header {
+  padding: $space-80 0;
+  background-image: linear-gradient(
+      to right,
+      rgba($grey-900, 0.8),
+      rgba($grey-900, 0.5)
+    ),
+    url("../img/section_header_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-form {
+  padding: $space-80 0;
+  .container-form {
+    max-width: 100rem;
+    margin: 0 auto;
+    background-color: $grey-200;
+    padding: $space-32 $space-48;
+    border-radius: $border-rad-s;
+  }
+}
+
+.section-map {
+  min-height: 40vh;
+  &__img-box {
+    height: 35vh;
+  }
+  &__img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__title {
+    padding: $space-24 0;
+    background-color: $color-pr;
+    color: $grey-50;
+    text-align: center;
+  }
+}
+
+.section-reviews {
+  padding: $space-80 0;
+}

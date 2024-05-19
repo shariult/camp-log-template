@@ -1,0 +1,22 @@
+// ======= Imports ======= //
+
+@use "../abstracts/" as *;
+
+// ======= Codes ======= //
+
+.user {
+  background-color: $grey-200;
+  padding: $space-48;
+  border-radius: $border-rad-s;
+  &--signup {
+    @include responsive(800) {
+      order: 2;
+    }
+  }
+  &--signin {
+    align-self: flex-start;
+    @include responsive(800) {
+      order: 1;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+/*
+Theme Name: Camp Log
+Theme URI: https://projects.shariul.com/templates/camp-log
+Description: Camp-log is about sharing data about the Camps all around the world and also Campers experience.
+Author: Md. Shariul Islam
+Author URI: https://www.shariul.com
+Version: 1.0
+Tags: responsive, columns, custom menu, etc.
+*/
+
+// ======= Vendor ======= //
+
+@use "vendor/vendor";
+
+// ======= Base ======= //
+
+@use "base/base";
+@use "base/animation";
+@use "base/typography";
+@use "base/utilities";
+
+// ======= Layout ======= //
+
+@use "layout/grid";
+@use "layout/navigation";
+@use "layout/header";
+@use "layout/footer";
+
+// ======= Components ======= //
+
+@use "components/card";
+@use "components/button";
+@use "components/form";
+@use "components/camp";
+@use "components/about";
+@use "components/feature";
+@use "components/review";
+
+// ======= Pages ======= //
+
+@use "pages/common";
+@use "pages/home";
+@use "pages/user";
+@use "pages/camp-single";
+
+// ======= Themes ======= //
+
+@use "themes/themes";

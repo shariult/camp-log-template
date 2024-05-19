@@ -1,0 +1,20 @@
+// ======= Imports ======= //
+
+@use "../abstracts/" as *;
+
+// code
+
+.feature {
+  &__title {
+    color: $grey-800;
+    margin-bottom: $space-8;
+  }
+  &__icon {
+    font-size: $size-36;
+    margin-right: $space-16;
+  }
+  &__details {
+    font-size: $size-16;
+    color: $grey-700;
+  }
+}

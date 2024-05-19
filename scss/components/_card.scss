@@ -1,0 +1,38 @@
+// ======= Imports ======= //
+
+@use "../abstracts/" as *;
+
+// ======= Codes ======= //
+
+$cards-width: 90%;
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  &-2 {
+    width: calc(#{$cards-width} / 2);
+    margin: calc((100% - #{$cards-width}) / 4);
+  }
+  &-3 {
+    width: calc(#{$cards-width} / 3);
+    margin: calc((100% - #{$cards-width}) / 6);
+  }
+  &-4 {
+    width: calc(#{$cards-width} / 4);
+    margin: calc((100% - #{$cards-width}) / 8);
+  }
+  &-5 {
+    width: calc(#{$cards-width} / 5);
+    margin: calc((100% - #{$cards-width}) / 10);
+  }
+  [class^="cards-"] {
+    @include responsive(800) {
+      width: calc(#{$cards-width} / 2);
+      margin: calc((100% - #{$cards-width}) / 4);
+    }
+    @include responsive(600) {
+      width: calc(#{$cards-width} / 1);
+      margin: calc((100% - #{$cards-width}) / 2);
+    }
+  }
+}

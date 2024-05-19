@@ -1,0 +1,150 @@
+<%- include('partials/head') %> <%- include('partials/navbar') %>
+
+<!-- Main Section -->
+<main class="main">
+  <!-- Section Header -->
+  <section class="section-header">
+    <h1 class="heading-1 text--light text--center">Sign In / Up</h1>
+  </section>
+
+  <!-- Section Form -->
+  <section class="section-form">
+    <div class="container row-flex">
+      <!-- Sign Up Column -->
+      <div class="col-1-2 user user--signup">
+        <h2 class="heading-2 text--center mb-48">
+          <span class="heading-2--sub">Join Us Now</span>Sign Up
+        </h2>
+
+        <!-- Sign Up Form -->
+        <form action="#" method="get" class="form">
+          <div class="form__group form__group--inline">
+            <label for="firstname" class="form__label">First Name</label>
+            <input
+              type="text"
+              name="firstname"
+              value=""
+              id="firstname"
+              class="form__input"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="form__group form__group--inline">
+            <label for="lastname" class="form__label">Last Name</label>
+            <input
+              type="text"
+              name="lastname"
+              value=""
+              id="lastname"
+              class="form__input"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="email" class="form__label">Email</label>
+            <input
+              type="email"
+              name="email"
+              value=""
+              id="email"
+              class="form__input"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form__group form__group--inline">
+            <label for="username" class="form__label">Username</label>
+            <input
+              type="text"
+              name="username"
+              value=""
+              id="username"
+              class="form__input"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="form__group form__group--inline">
+            <label for="password" class="form__label">Password</label>
+            <input
+              type="password"
+              name="password"
+              value=""
+              id="password"
+              class="form__input"
+              placeholder="Password "
+              required
+            />
+          </div>
+          <div class="form__group form__group--inline">
+            <label for="profile-image" class="form__label"
+              >Profile Picture</label
+            >
+            <input
+              type="text"
+              name="profile-image"
+              value=""
+              id="profile-image"
+              class="form__input"
+              placeholder="Image URL"
+              required
+            />
+          </div>
+          <div class="form__group form__group--inline">
+            <label for="birth-date" class="form__label">Birth Date</label>
+            <input
+              type="date"
+              name="birth-date"
+              value=""
+              id="birth-date"
+              class="form__input"
+              placeholder="Birth Data"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn--primary mt-16">Sign Up</button>
+        </form>
+      </div>
+
+      <!-- Sign in Column -->
+      <div class="col-1-2 user user--signin">
+        <h2 class="heading-2 text--center mb-48">
+          <span class="heading-2--sub">Already a Member</span>Sign In
+        </h2>
+
+        <!-- Sign in Form -->
+        <form action="#" method="get" class="form">
+          <div class="form__group">
+            <label for="username" class="form__label">Username</label>
+            <input
+              type="text"
+              name="username"
+              value=""
+              id="username"
+              class="form__input"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="password" class="form__label">Password</label>
+            <input
+              type="password"
+              name="password"
+              value=""
+              id="password"
+              class="form__input"
+              placeholder="Password "
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn--primary mt-16">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %> <%- include('partials/end') %>
