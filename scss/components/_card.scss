@@ -4,35 +4,33 @@
 
 // ======= Codes ======= //
 
-$cards-width: 90%;
-
 .cards {
   display: flex;
   flex-flow: row wrap;
   &-2 {
-    width: calc(#{$cards-width} / 2);
-    margin: calc((100% - #{$cards-width}) / 4);
+    width: calc(#{$flex-col-width} / 2);
+    margin: 0 calc((100% - #{$flex-col-width}) / 4) $card-gutter-row;
   }
   &-3 {
-    width: calc(#{$cards-width} / 3);
-    margin: calc((100% - #{$cards-width}) / 6);
+    width: calc(#{$flex-col-width} / 3);
+    margin: 0 calc((100% - #{$flex-col-width}) / 6) $card-gutter-row;
   }
   &-4 {
-    width: calc(#{$cards-width} / 4);
-    margin: calc((100% - #{$cards-width}) / 8);
+    width: calc(#{$flex-col-width} / 4);
+    margin: 0 calc((100% - #{$flex-col-width}) / 8) $card-gutter-row;
   }
   &-5 {
-    width: calc(#{$cards-width} / 5);
-    margin: calc((100% - #{$cards-width}) / 10);
+    width: calc(#{$flex-col-width} / 5);
+    margin: 0 calc((100% - #{$flex-col-width}) / 10) $card-gutter-row;
   }
   [class^="cards-"] {
-    @include responsive(800) {
-      width: calc(#{$cards-width} / 2);
-      margin: calc((100% - #{$cards-width}) / 4);
+    @include responsive(1000) {
+      width: calc(#{$flex-col-width} / 2);
+      margin: 0 calc((100% - #{$flex-col-width}) / 4) $card-gutter-row;
     }
-    @include responsive(600) {
-      width: calc(#{$cards-width} / 1);
-      margin: calc((100% - #{$cards-width}) / 2);
+    @include responsive(800) {
+      width: calc(#{$flex-col-width} / 1);
+      margin: 0 calc((100% - #{$flex-col-width}) / 2) $card-gutter-row;
     }
   }
 }

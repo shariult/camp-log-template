@@ -3,24 +3,22 @@
 @use "../abstracts/" as *;
 
 // ======= Codes ======= //
-
-$form-border-width: 2px;
-$form-border-radius: 4px;
-
 .form {
   display: flex;
   flex-wrap: wrap;
   gap: $space-16;
-
-  //=======Group Styles=======
+  // Group Styles
   &__group {
     flex-basis: 100%;
-    &--inline {
+    &-1-2 {
       flex-basis: calc(50% - (#{$space-16} / 2));
+      @include responsive(800) {
+        flex-basis: 100%;
+      }
     }
   }
 
-  //=======Input Styles=======
+  // Input Styles
   &__input,
   &__textarea {
     display: block;
@@ -63,14 +61,14 @@ $form-border-radius: 4px;
     // transform: translateY(-4rem);
   }
 
-  //=======Textarea Styles=======
+  // Textarea Styles
   &__textarea {
     display: block;
     width: 100%;
     height: 10rem;
   }
 
-  //=======Radio & Checkbox Styles=======
+  // Radio & Checkbox Styles
   &__radio {
     display: inline-block;
     margin-right: 2rem;
@@ -155,7 +153,7 @@ $form-border-radius: 4px;
     opacity: 1;
   }
 
-  //=======Select Menu Styles=======
+  // Select Menu Styles
   &__select {
     position: relative;
     display: inline-block;
@@ -218,7 +216,7 @@ $form-border-radius: 4px;
     border: $form-border-width solid $color-danger;
   }
 
-  //=======Helper Styles=======
+  // Helper Styles
   &__helper-text {
     margin-right: $space-16;
   }

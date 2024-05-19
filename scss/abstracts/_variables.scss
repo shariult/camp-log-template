@@ -73,6 +73,9 @@ $border-rad-s: 0.4rem;
 $border-rad-m: 0.8rem;
 $border-rad-l: 1.2rem;
 
+$form-border-width: 2px;
+$form-border-radius: 4px;
+
 // ======= Spacing ======= //
 
 $space-2: 0.2rem;
@@ -102,6 +105,8 @@ $padding-xl: $space-24 $space-64;
 $grid-width: 132rem;
 $gutter-col: $space-64; // horizontal margin/padding
 $gutter-row: $space-96; // vertical margin/padding
+$flex-col-width: 92%; // Flex Columns: 100% = no space between columns
+$card-gutter-row: $space-48;
 
 // ======= Transition ======= //
 
