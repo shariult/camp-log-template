@@ -22,6 +22,9 @@
       text-align: center;
     }
   }
+  @include responsive(1320) {
+    padding: $space-80 $space-24;
+  }
   .container {
     min-height: 50vh;
     display: flex;
