@@ -1,8 +1,8 @@
-// ======= Imports ======= //
+// Imports //
 
 @use "../abstracts/" as *;
 
-// ======= Vendor Scripts ======= //
+// Vendor Scripts //
 
 $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts"; // set $fa-font-path value
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";

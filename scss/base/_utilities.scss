@@ -1,9 +1,9 @@
-// ======= Imports ======= //
+// Imports //
 
 @use "sass:math";
 @use "../abstracts/" as *;
 
-// ======= Codes ======= //
+// Codes //
 
 $spaceAmounts: (12, 16, 24, 48);
 @each $space in $spaceAmounts {

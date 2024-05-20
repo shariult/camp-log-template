@@ -8,25 +8,25 @@ Version: 1.0
 Tags: responsive, columns, custom menu, etc.
 */
 
-// ======= Vendor ======= //
+// Vendor //
 
 @use "vendor/vendor";
 
-// ======= Base ======= //
+// Base //
 
 @use "base/base";
 @use "base/animation";
 @use "base/typography";
 @use "base/utilities";
 
-// ======= Layout ======= //
+// Layout //
 
 @use "layout/grid";
 @use "layout/navigation";
 @use "layout/header";
 @use "layout/footer";
 
-// ======= Components ======= //
+// Components //
 
 @use "components/card";
 @use "components/button";
@@ -36,7 +36,7 @@ Tags: responsive, columns, custom menu, etc.
 @use "components/feature";
 @use "components/review";
 
-// ======= Pages ======= //
+// Pages //
 
 @use "pages/camp-single";
 @use "pages/common";
@@ -44,6 +44,6 @@ Tags: responsive, columns, custom menu, etc.
 @use "pages/home";
 @use "pages/user";
 
-// ======= Themes ======= //
+// Themes //
 
 @use "themes/themes";

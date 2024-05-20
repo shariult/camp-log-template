@@ -6,7 +6,7 @@ Spacing system (px):- 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 
 
 */
 
-// ======= Typography Sizes ======= //
+// Typography Sizes //
 
 $size-10: 1rem;
 $size-12: 1.2rem;
@@ -24,7 +24,7 @@ $size-74: 7.4rem;
 $size-86: 8.6rem;
 $size-98: 9.8rem;
 
-// ======= Color Palette ======= //
+// Color Palette //
 
 // Primary Color
 $color-pl: #5d7e68;
@@ -55,7 +55,7 @@ $grey-800: #343a40;
 $grey-900: #212529;
 $black: #000000;
 
-// ======= Shadows ======= //
+// Shadows //
 
 $shadow-s:
   0 1px 3px 0 rgba($black, 0.1),
@@ -67,7 +67,7 @@ $shadow-l:
   0 10px 15px -3px rgba($black, 0.1),
   0 4px 6px -4px rgba($black, 0.1);
 
-// ======= Border Radius ======= //
+// Border Radius //
 
 $border-rad-s: 0.4rem;
 $border-rad-m: 0.8rem;
@@ -76,7 +76,7 @@ $border-rad-l: 1.2rem;
 $form-border-width: 2px;
 $form-border-radius: 4px;
 
-// ======= Spacing ======= //
+// Spacing //
 
 $space-2: 0.2rem;
 $space-4: 0.4rem;
@@ -92,7 +92,7 @@ $space-96: 9.6rem;
 $space-128: 12.8rem;
 $space-160: 16rem;
 
-// ======= Padding ======= //
+// Padding //
 
 $padding-xs: $space-4 $space-12;
 $padding-sm: $space-8 $space-24;
@@ -100,7 +100,7 @@ $padding-md: $space-12 $space-32;
 $padding-lg: $space-16 $space-48;
 $padding-xl: $space-24 $space-64;
 
-// ======= Grid ======= //
+// Grid //
 
 $grid-width: 132rem;
 $gutter-col: $space-64; // horizontal margin/padding
@@ -108,7 +108,7 @@ $gutter-row: $space-96; // vertical margin/padding
 $flex-col-width: 92%; // Flex Columns: 100% = no space between columns
 $card-gutter-row: $space-48;
 
-// ======= Transition ======= //
+// Transition //
 
 $transition-s: all 0.2s linear;
 $transition-m: all 0.3s linear;
