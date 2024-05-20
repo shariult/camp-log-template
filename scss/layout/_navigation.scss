@@ -81,6 +81,13 @@
       color: $grey-900;
     }
   }
+  .active {
+    background: $color-pd;
+    color: $grey-50;
+  }
+  .active:hover {
+    background-color: $color-pd;
+  }
   &__toggle {
     align-self: center;
     display: none;

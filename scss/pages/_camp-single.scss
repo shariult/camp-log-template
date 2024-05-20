@@ -18,6 +18,17 @@
       flex-direction: column;
     }
   }
+  &__action {
+    background-color: $grey-50;
+  }
+  &__action-box {
+    display: flex;
+    justify-content: space-between;
+    padding: $space-16 0;
+    @include responsive(1320) {
+      padding: $space-16 $space-24;
+    }
+  }
   &__title-box {
   }
   &__info {

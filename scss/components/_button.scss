@@ -52,6 +52,18 @@
     background-color: $color-sd;
   }
 
+  // Danger Button
+  &--danger,
+  &--danger:link,
+  &--danger:visited {
+    padding: $padding-sm;
+    background-color: $color-danger;
+    color: $grey-50;
+  }
+  &--danger:hover {
+    background-color: $grey-900;
+  }
+
   // Sizes
   &--md,
   &--md:link,
