@@ -23,7 +23,10 @@
     width: calc(#{$flex-col-width} / 5);
     margin: 0 calc((100% - #{$flex-col-width}) / 10) $card-gutter-row;
   }
-  [class^="cards-"] {
+  &-2,
+  &-3,
+  &-4,
+  &-5 {
     @include responsive(1000) {
       width: calc(#{$flex-col-width} / 2);
       margin: 0 calc((100% - #{$flex-col-width}) / 4) $card-gutter-row;

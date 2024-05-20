@@ -18,6 +18,9 @@
   &__text {
     color: $grey-200;
     text-transform: capitalize;
+    @include responsive(800) {
+      text-align: center;
+    }
   }
   .container {
     min-height: 50vh;
