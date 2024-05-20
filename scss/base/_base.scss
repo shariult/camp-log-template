@@ -13,6 +13,12 @@
 }
 html {
   font-size: 62.5%; // Set 1rem = 10px (10/16*100)
+  @include responsive(1200) {
+    font-size: 60%;
+  }
+  @include responsive(800) {
+    font-size: 52%;
+  }
 }
 body {
   box-sizing: border-box;

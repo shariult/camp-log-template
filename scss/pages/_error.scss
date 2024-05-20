@@ -1,0 +1,26 @@
+// ======= Imports ======= //
+
+@use "../abstracts/" as *;
+
+// ======= Codes ======= //
+
+.section-error {
+  padding: $space-80 0;
+  text-align: center;
+  .error {
+    &__title {
+      font-size: $size-98;
+      color: $grey-400;
+      line-height: 1.2;
+      @include responsive(1200) {
+        font-size: $size-86;
+      }
+      @include responsive(800) {
+        font-size: $size-74;
+      }
+    }
+    &__message {
+      margin-bottom: $space-32;
+    }
+  }
+}

@@ -38,10 +38,11 @@ Tags: responsive, columns, custom menu, etc.
 
 // ======= Pages ======= //
 
+@use "pages/camp-single";
 @use "pages/common";
+@use "pages/error";
 @use "pages/home";
 @use "pages/user";
-@use "pages/camp-single";
 
 // ======= Themes ======= //
 
