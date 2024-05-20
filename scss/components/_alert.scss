@@ -1,0 +1,38 @@
+// Imports //
+
+@use "../abstracts/" as *;
+
+// Codes //
+
+.alert {
+  width: 100%;
+  position: fixed;
+  top: 7.2rem;
+  @include responsive(800) {
+    top: 9rem;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    padding: $space-16;
+  }
+  &__text {
+    font-size: $size-20;
+  }
+  &__close {
+    padding: $space-4 $space-8;
+    background-color: $grey-200;
+    font-size: $size-36;
+    color: $grey-900;
+  }
+  &__close:hover {
+    background-color: $grey-50;
+  }
+  &--success {
+    background-color: $color-se;
+  }
+  &--danger {
+    background-color: $color-danger;
+    color: $grey-50;
+  }
+}
