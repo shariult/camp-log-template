@@ -8,6 +8,8 @@
   width: 100%;
   position: fixed;
   top: 7.2rem;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: top;
   @include responsive(800) {
     top: 9rem;
   }
@@ -20,10 +22,16 @@
     font-size: $size-20;
   }
   &__close {
+    display: inline-block;
     padding: $space-4 $space-8;
-    background-color: $grey-200;
-    font-size: $size-36;
+    background-color: transparent;
+    font-size: $size-20;
+    font-weight: 700;
     color: $grey-900;
+    border: none;
+    border-radius: $border-rad-s;
+    outline: none;
+    transition: $transition-s;
   }
   &__close:hover {
     background-color: $grey-50;

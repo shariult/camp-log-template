@@ -10,3 +10,9 @@ Array.from(navbarItemsEl).forEach((navbarItem) => {
     navbarListEl.classList.toggle("navbar__toggle--open");
   });
 });
+
+const alertCloseEl = document.querySelector(".alert__close");
+const alertEl = document.querySelector(".alert");
+alertCloseEl.addEventListener("click", function () {
+  alertEl.style.transform = "scaleY(0)";
+});
