@@ -216,6 +216,35 @@
     border: $form-border-width solid $color-danger;
   }
 
+  // File Input Styles
+  &__file-input::file-selector-button {
+    background-color: $color-pr;
+    color: $grey-50;
+    padding: $padding-sm;
+    border: none;
+    border-radius: $form-border-radius;
+    cursor: pointer;
+  }
+  &__image-row {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &__image-col {
+    // margin: $space-32 0;
+    width: 30%;
+    margin: $space-32 calc(((100% / 3) - 30%) / 2);
+    @include responsive(800) {
+      width: 45%;
+      margin: $space-32 calc(((100% / 2) - 45%) / 2);
+    }
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    margin-bottom: $space-12;
+  }
+
   // Helper Styles
   &__helper-text {
     margin-right: $space-16;

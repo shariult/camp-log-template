@@ -46,13 +46,13 @@
           />
         </div>
         <div class="form__group">
-          <label for="camp-image" class="form__label">Camp Image</label>
+          <label for="campImage" class="form__label">Camp Image</label>
           <input
-            type="text"
-            name="camp-image"
+            type="file"
+            name="campImage"
             value=""
-            id="camp-image"
-            class="form__input"
+            id="campImage"
+            class="form__file-input"
             placeholder="Camp Image"
             required
           />
@@ -117,7 +117,9 @@
             required
           />
         </div>
-        <div class="form__group">
+
+        <!-- Delete images -->
+        <!-- <div class="form__group">
           <label for="description" class="form__label">Description</label>
           <textarea
             name="description"
@@ -128,6 +130,51 @@
             required
           ></textarea>
         </div>
+        <div class="form__group form__image-row">
+          <div class="form__image-col">
+            <img src="img/camp-1.jpg" alt="camp 1" class="form__image" />
+            <div class="form__checkbox">
+              <input
+                type="checkbox"
+                name="campImage[]"
+                id="campImage-1"
+                class="form__checkbox-input"
+              />
+              <label for="campImage-1" class="form__checkbox-label"
+                ><span class="form__checkbox-btn"></span> Delete Image</label
+              >
+            </div>
+          </div>
+          <div class="form__image-col">
+            <img src="img/camp-2.jpg" alt="camp 2" class="form__image" />
+            <div class="form__checkbox">
+              <input
+                type="checkbox"
+                name="campImage[]"
+                id="campImage-2"
+                class="form__checkbox-input"
+              />
+              <label for="campImage-2" class="form__checkbox-label"
+                ><span class="form__checkbox-btn"></span> Delete Image</label
+              >
+            </div>
+          </div>
+          <div class="form__image-col">
+            <img src="img/camp-3.jpg" alt="camp 3" class="form__image" />
+            <div class="form__checkbox">
+              <input
+                type="checkbox"
+                name="campImage[]"
+                id="campImage-3"
+                class="form__checkbox-input"
+              />
+              <label for="campImage-3" class="form__checkbox-label"
+                ><span class="form__checkbox-btn"></span> Delete Image</label
+              >
+            </div>
+          </div>
+        </div> -->
+
         <button type="submit" class="btn btn--primary btn--md mt-24">
           Add Camp
         </button>
