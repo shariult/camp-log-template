@@ -6,6 +6,10 @@
 
 .camp-card {
   &__img-box {
+    height: 40rem;
+    @include responsive(700) {
+      height: 30rem;
+    }
   }
   &__img {
     width: 100%;
